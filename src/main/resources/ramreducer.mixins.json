@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.manus.ramreducer.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "BlockStateMixin",
+    "ModelPredicateMixin",
+    "StringDeduplicationMixin",
+    "ResourceLoadingMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
