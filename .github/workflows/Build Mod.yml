@@ -17,6 +17,12 @@ jobs:
           java-version: ${{ matrix.java }}
           distribution: 'microsoft'
 
+      # ขั้นตอนนี้จะโหลดไฟล์ gradle-wrapper.jar ของจริงมาให้เองครับ
+      - name: Download Valid Gradle Wrapper
+        run: |
+          mkdir -p gradle/wrapper
+          curl -L https://github.com/gradle/gradle/raw/v8.8.0/gradle/wrapper/gradle-wrapper.jar -o gradle/wrapper/gradle-wrapper.jar
+
       - name: Make gradlew executable
         run: chmod +x gradlew
 
@@ -28,6 +34,3 @@ jobs:
         with:
           name: RamReducer-Mod-Fabric-
           path: build/libs/*.jar
-
-    
-        
