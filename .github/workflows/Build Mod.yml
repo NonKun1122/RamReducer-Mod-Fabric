@@ -17,7 +17,6 @@ jobs:
           java-version: ${{ matrix.java }}
           distribution: 'microsoft'
 
-      # ขั้นตอนนี้จะโหลดไฟล์ gradle-wrapper.jar ของจริงมาให้เองครับ
       - name: Download Valid Gradle Wrapper
         run: |
           mkdir -p gradle/wrapper
@@ -29,8 +28,8 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
-      - name: Upload RamReducer-Mod-Fabric
+      - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: RamReducer-Mod-Fabric-
+          name: RamReducer-Mod
           path: build/libs/*.jar
