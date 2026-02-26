@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "id": "ramreducer",
-  "version": "${version}",
+  "version": "1.0.0",
   "name": "RAM Reducer",
-  "description": "A mod that reduces RAM usage of other mods by optimizing memory allocation and lazy loading assets.",
+  "description": "Optimizes memory usage and shows RAM overlay. Press 'R' to open settings.",
   "authors": [
-    "Manus"
+    "NonKungCh"
   ],
   "contact": {
-    "youTube": "https://youtube.com/@nonkung_ch?si=g_E10QsTq62Vx_EK",
-    "modrinth": "https://modrinth.com/user/NonKungCh"
+    "homepage": "https://github.com/NonKun1122/RamReducer-Mod-Fabric",
+    "sources": "https://github.com/NonKun1122/RamReducer-Mod-Fabric"
   },
   "license": "MIT",
   "icon": "assets/ramreducer/icon.png",
@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "com.nonkungch.ramreducer.RamReducer"
+    ],
+    "client": [
+      "com.nonkungch.ramreducer.RamReducerClient"
     ],
     "preLaunch": [
       "com.nonkungch.ramreducer.RamReducerPreLaunch"
@@ -26,9 +29,9 @@
     "ramreducer.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
-    "minecraft": "~1.20",
-    "java": ">=17",
-    "fabric-api": "*"
+    "fabricloader": ">=0.14.21",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
   }
 }
