@@ -10,7 +10,11 @@ public class RamReducer implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        Config.load();
         LOGGER.info("RAM Reducer initialized. Optimizing memory...");
         MemoryMonitor.startMonitoring();
+        
+        // ลงทะเบียน HUD Overlay สำหรับแสดงผลบนหน้าจอ
+        net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback.EVENT.register(new RamHudOverlay());
     }
 }
