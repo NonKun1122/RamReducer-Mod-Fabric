@@ -7,8 +7,7 @@
     "BlockStateMixin",
     "ModelPredicateMixin",
     "StringDeduplicationMixin",
-    "ResourceLoadingMixin",
-    "SodiumVideoOptionsMixin"
+    "ResourceLoadingMixin"
   ],
   "client": [
   ],
