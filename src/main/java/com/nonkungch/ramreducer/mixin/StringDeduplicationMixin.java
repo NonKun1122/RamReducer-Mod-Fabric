@@ -1,4 +1,4 @@
-package com.manus.ramreducer.mixin;
+package com.nonkungch.ramreducer.mixin;
 
 import net.minecraft.util.Identifier;
 import org.spongepowered.asm.mixin.Mixin;
