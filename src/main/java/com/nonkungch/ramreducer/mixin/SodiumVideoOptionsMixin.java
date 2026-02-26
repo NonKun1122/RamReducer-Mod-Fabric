@@ -17,9 +17,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.List;
 
-@Mixin(SodiumVideoOptionsScreen.class)
+@Mixin(value = SodiumVideoOptionsScreen.class, remap = false)
 public class SodiumVideoOptionsMixin {
-    @Shadow(remap = false)
+    @Shadow
     @Final
     private List<OptionPage> pages;
 
