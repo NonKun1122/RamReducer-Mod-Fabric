@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.manus.ramreducer.RamReducer"
+      "com.nonkungch.ramreducer.RamReducer"
     ],
     "preLaunch": [
-      "com.manus.ramreducer.RamReducerPreLaunch"
+      "com.nonkungch.ramreducer.RamReducerPreLaunch"
     ]
   },
   "mixins": [
