@@ -1,4 +1,4 @@
-package com.manus.ramreducer;
+package com.nonkungch.ramreducer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

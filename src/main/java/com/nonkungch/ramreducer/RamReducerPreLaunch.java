@@ -1,4 +1,4 @@
-package com.manus.ramreducer;
+package com.nonkungch.ramreducer;
 
 import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
 import org.slf4j.Logger;
